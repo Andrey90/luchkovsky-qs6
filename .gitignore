@@ -80,3 +80,11 @@ target/surefire-reports/junitreports/TEST-pak.FirstTest.xml
 target/surefire-reports/passed.png
 
 luchkovsky-qs6.iml
+
+target/classes/less3/testSum.class
+
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+
+target/surefire-reports/testng-failed.xml
+
+target/surefire-reports/firstTestSuite/testng-failed.xml
