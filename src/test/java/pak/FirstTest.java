@@ -1,5 +1,6 @@
 package pak;
 
+import less3.Home2;
 import less3.testSum;
 import org.testng.annotations.Test;
 import org.testng.Assert;
@@ -15,5 +16,10 @@ public class FirstTest {
     public void firstTest() {
         testSum sum = new testSum();
         assertEquals(sum.sum(1, 2),4);
+    }
+    @Test
+    public void emailTest(){
+        Home2 EmTest = new Home2();
+        //assertEquals();
     }
 }
