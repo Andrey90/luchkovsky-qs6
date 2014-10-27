@@ -2,9 +2,7 @@ package pak;
 
 import less3.TestEmail;
 import less3.TestSum;
-import org.junit.Test;
-import org.junit.runners.Parameterized;
-import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -21,11 +19,8 @@ import static org.testng.Assert.assertNotEquals;
  * To change this template use File | Settings | File Templates.
  */
 
-
-@RunWith(Parameterized.class)
 public class TestEmailTest {
 
-    @org.junit.runners.Parameterized.Parameters
     public static Collection<Object[]> data1() {
         return Arrays.asList(new Object[][]{
                 {"test@test.ua", true}
