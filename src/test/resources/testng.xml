@@ -5,7 +5,7 @@
 
     <test name="SmokeTest">
         <classes>
-            <class name="pak.FirstTest" />
+            <class name="pak.TestSumTest" />
         </classes>
     </test>
 </suite>

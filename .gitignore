@@ -75,7 +75,7 @@ target/surefire-reports/old/firstTestSuite/classes.html
 
 target/surefire-reports/old/firstTestSuite/SmokeTest.properties
 
-target/surefire-reports/junitreports/TEST-pak.FirstTest.xml
+target/surefire-reports/junitreports/TEST-pak.TestSumTest.xml
 
 target/surefire-reports/passed.png
 
