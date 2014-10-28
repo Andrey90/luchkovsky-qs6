@@ -1,7 +1,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="TestSuite" verbose="1" >
-   <suite-files>
-       <suite-file path="functional.xml"></suite-file>
-   </suite-files>
+<suite name="firstTestSuite" verbose="1" >
+    <parameter name="expectedCount" value="2"/>
+
+    <test name="SmokeTest">
+        <classes>
+            <class name="pak.TestSumTest" />
+        </classes>
+    </test>
 </suite>
