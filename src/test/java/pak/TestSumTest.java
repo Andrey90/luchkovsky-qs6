@@ -28,6 +28,7 @@ public class TestSumTest {
 
 
 
+    public TestSumTest(){}
     public TestSumTest(int sumArg1, int sumArg2, int sumRes) {
         this.sumArg1 = sumArg1;
         this.sumArg2 = sumArg2;
