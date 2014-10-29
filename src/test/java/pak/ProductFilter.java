@@ -9,8 +9,6 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import java.util.Objects;
-
 public class ProductFilter {
 
     public static WebDriver driver;
