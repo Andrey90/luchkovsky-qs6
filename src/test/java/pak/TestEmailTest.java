@@ -44,6 +44,7 @@ public class TestEmailTest {
     public void TestEmail(){
         TestEmail emTest1 = new TestEmail();
         assertEquals(emTest1.EmTest(emailStr), rez);
+
     }
 
 }
