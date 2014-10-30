@@ -1,10 +1,7 @@
 package pak;
 
 import less3.TestEmail;
-import less3.TestSum;
-import org.junit.Test;
-import org.junit.runners.Parameterized;
-import org.junit.runner.RunWith;
+import org.testng.annotations.Test;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -32,6 +29,8 @@ public class TestEmailTest {
         });
     }
 
+
+
     private boolean rez;
     private String emailStr;
 
@@ -45,6 +44,7 @@ public class TestEmailTest {
         TestEmail emTest1 = new TestEmail();
         assertEquals(emTest1.EmTest(emailStr), rez);
 
+        throw new RuntimeException("A'm error");
     }
 
 }
