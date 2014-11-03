@@ -14,4 +14,5 @@ public class regPage {
 
     private void checkNik(UserHL userHL) {
     }
+
 }
