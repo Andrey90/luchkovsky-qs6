@@ -23,7 +23,7 @@ public class regTest {
         };
     }
 
-    @BeforeTest
+    @BeforeSuite
     public void initEnv() {
         driver = new FirefoxDriver();
 
@@ -32,7 +32,7 @@ public class regTest {
     @Test(dataProvider = "url")
     public void pos(String siteUrl) {
         driver.get(siteUrl);
-        String email = "emaqrte3@mail.ru";
+        String email = "qwytqw@i.ua";
         String pass = "password";
         String nik = "nik";
 
@@ -80,7 +80,7 @@ public class regTest {
 
     }
 
-    @AfterTest
+    @AfterSuite
     public void shutEnv() {
         if (driver != null)
             driver.quit();

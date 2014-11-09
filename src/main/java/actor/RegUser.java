@@ -5,9 +5,9 @@ public class RegUser {
     private String nickname;
     private String passwd;
 
-    public RegUser() {
+    public void regData() {
         this.email = "asd" + Long.toString(System.currentTimeMillis()) + "@i.ua";
-        this.nickname = "asd";
-        this.passwd = "qwerty";
+        this.nickname = "nik";
+        this.passwd = "password";
     }
 }

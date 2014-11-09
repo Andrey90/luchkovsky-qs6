@@ -3,11 +3,11 @@ package utils;
 import org.apache.log4j.Logger;
 import org.testng.Reporter;
 
-public class LogTest {
-    private LogTest() {
+public class Log4Test {
+    private Log4Test() {
     }
 
-    private static final Logger LOGGER = Logger.getLogger(LogTest.class);
+    private static final Logger LOGGER = Logger.getLogger(Log4Test.class);
 
     // ****************** Default message content ********************
     private static final String INFO_LOG = "INFO: \"%s\"";

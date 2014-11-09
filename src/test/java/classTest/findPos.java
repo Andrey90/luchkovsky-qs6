@@ -6,12 +6,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
-public class findeTest {
+public class findPos {
     public static WebDriver driver;
 
     @DataProvider
@@ -21,7 +18,7 @@ public class findeTest {
         };
     }
 
-    @BeforeTest
+    @BeforeSuite
     public void initEnv() {
         driver = new FirefoxDriver();
 
@@ -42,13 +39,14 @@ public class findeTest {
         driver.findElement(By.id("searchbox")).sendKeys(prodName);
         wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("searchbox"))));
         driver.findElement(By.id("doSearch")).click();
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[contains(text(),'" + prodName + "')]"))));
+        //wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[contains(text(),'" + prodName + "')]"))));
         Assert.assertTrue(driver.findElements(By.xpath("//a[contains(text(),'" + prodName + "')]")).size() != 0);
 
 
     }
 
-    @AfterTest
+
+    @AfterSuite
     public void shutEnv() {
         if (driver != null)
             driver.quit();
